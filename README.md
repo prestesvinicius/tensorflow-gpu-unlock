@@ -43,35 +43,45 @@ export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/extras/CUP
 export PATH="/c/tools/cuda/bin:$PATH"
 ```
 Substitua pelo endereço de instalação no seu PC.
+Ou faça de forma manual, pela barra de tarefas > Editar as variáveis de ambientes do sistema > Variáveis de Ambiente... > Path > Adicione manualmente os endereços dos diretórios.
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/01e24163-0f73-4f58-84e2-8253a9f29cdc)
+
 
 ### 2.4 TensorFlow
 Como dito anteriormente, a versão mais atualizada do TensorFlow que habilita GPU pelo Windows é a versão 2.10, instale ela usando pip install, dentro do ambiente conda criado no Anaconda Prompt.
 ```plaintext
 pip install tensorflow==2.10
 ```
+Se for necessário utilizar outra combinação, acesse o [diretório do TensorFlow](https://www.tensorflow.org/install/source_windows?hl=pt-br#gpu) e confira as versões compatíveis entre si.
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/58ea23c1-2551-4090-943c-fde8cbfe0fa3)
+
 
 ### 2.5 Jupyter Notebook/Jupyer Lab
 Abra o Anaconda Navigator no seu PC.
 
 Na aba *"Environments"* selecione o ambiente que você criou para a configuração da GPU.
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/5ae622d2-62b0-4e66-9f31-d2f1a57f452a)
 
 Depois de selecionado, volte para a aba *"Home"* e instale o Jupyter Notebook ou Jupyter Lab, de acordo com sua preferência.
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/3ef30324-bc69-4a6a-bfe7-6fcf9db4fefe)
+
 
 
 ## 3. Verificação
 Inicie o Jupyter que você instalou e crie um arquivo .ipynb
+
 
 Execute o seguinte código:
 ```python
 import tensorflow as tf
 print(tf.config.list_physical_devices())
 ```
-Se no seu output conter algo desse tipo:
+Se seu output conter algo desse tipo:
 ```plaintext
 [...PhysicalDevice(name=’/physical_device:GPU:0',device_type=’GPU’]
 ```
 
-SUCESSO!! Agora você pode aproveitar a acelração de GPU em seus projetos de Deep Learning usando TensorFlow.
+SUCESSO!! Agora você pode aproveitar a aceleração de GPU em seus projetos de Deep Learning usando TensorFlow.
 
 
 
