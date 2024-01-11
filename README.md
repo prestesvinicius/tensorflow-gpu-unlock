@@ -72,7 +72,7 @@ Depois de selecionado, volte para a aba *"Home"* e instale o Jupyter Notebook ou
 
 
 ## 3. Verificação
-Inicie o Jupyter que você instalou e crie um arquivo .ipynb
+Pelo Anaconda Navigator, inicie o Jupyter Notebook/Jupyter Lab que você instalou e crie um arquivo .ipynb
 
 
 Execute o seguinte código:
