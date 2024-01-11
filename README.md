@@ -17,7 +17,12 @@ Depois de executar o setup modifique a versão, marque apenas a caixa com *"Dese
 ### 2.2 Anaconda 3
 Baixe o instalador pelo site oficial do [Anaconda Distribution](https://www.anaconda.com/download)
 
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/6ef3b412-50f1-4778-a73c-8a3c2399f614)
+
+
 Execute o instalador e certifique-se de selecionar de marcar o quadro com a opção *"Add Anaconda3 to my PATH environment variable"*
+
+![image](https://github.com/prestesvinicius/tensorflow-gpu-unlock/assets/112510714/a1ae1d5f-8f4f-4709-a976-0707b42e0f9b)
 
 ### 2.3 CUDA e CUDNN
 As versões compatíveis dos drivers para TensorFlow 2.10 (última versão que funciona no windows) são CUDA 11.2 e cuDNN 8.1
