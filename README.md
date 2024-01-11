@@ -1,4 +1,4 @@
-# Tutorial
+# Tutorial de Configuração TensorFlow GPU
 Siga o passo-a-passo para concluir a configuração da sua GPU no TensorFlow
 
 ## 1. Requisitos
