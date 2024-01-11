@@ -37,13 +37,36 @@ export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/bin:$PATH"
 export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/extras/CUPTI/libx64:$PATH"
 export PATH="/c/tools/cuda/bin:$PATH"
 ```
-Troque pelo endereço de instalação no seu PC.
+Substitua pelo endereço de instalação no seu PC.
 
 ### 2.4 TensorFlow
 Como dito anteriormente, a versão mais atualizada do TensorFlow que habilita GPU pelo Windows é a versão 2.10, instale ela usando pip install, dentro do ambiente conda criado no Anaconda Prompt.
 ```plaintext
 pip install tensorflow==2.10
 ```
+
+### 2.5 Jupyter Notebook/Jupyer Lab
+Abra o Anaconda Navigator no seu PC.
+
+Na aba *"Environments"* selecione o ambiente que você criou para a configuração da GPU.
+
+Depois de selecionado, volte para a aba *"Home"* e instale o Jupyter Notebook ou Jupyter Lab, de acordo com sua preferência.
+
+
+## 3. Verificação
+Inicie o Jupyter que você instalou e crie um arquivo .ipynb
+
+Execute o seguinte código:
+```python
+import tensorflow as tf
+print(tf.config.list_physical_devices())
+```
+Se no seu output conter algo desse tipo:
+```plaintext
+[...PhysicalDevice(name=’/physical_device:GPU:0',device_type=’GPU’]
+```
+
+SUCESSO!! Agora você pode aproveitar a acelração de GPU em seus projetos de Deep Learning usando TensorFlow.
 
 
 
